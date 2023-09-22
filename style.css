@@ -12,41 +12,24 @@ body {
 .login {
     align-items: center;
 }
-.command-name {
-    grid-area: command;
-}
-.credentials {
-    grid-area: credentials;
-}
-.login-user {
-    grid-area: login-u-ph;
-}
-.login-user-input {
-    grid-area: login-u-i;
+.login-user {    
+    display: flex;
+    flex-direction: row;
 }
 .login-pass {
-    grid-area: login-p-ph;
-}
-.login-pass-input {
-    grid-area: login-p-i;
-}
-.login-button {
-    grid-area: button;
+    display: flex;
+    flex-direction: row;
 }
 
+
 .login-form {
+    min-width: 500px;
+    min-height: 200px;
     background-color: #343A40;
     border-radius: 25px;
     box-shadow: 5px 2px 2px red;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-template-areas: 
-    "command command"
-    "credentials credentials"
-    "login-u-ph login-u-i"
-    "login-p-ph login-p-i"
-    "button button";
+    display: flex;
+    align-items: stretch;
 }
 
 /*
